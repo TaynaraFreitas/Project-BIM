@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+ display: flex ;
+ padding-top: 5rem;
+ justify-content: center;
+ align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 23rem;
+  height: 25rem;
+  align-items: center;
+  border-radius: 4rem;
+  box-shadow: 0rem 0rem 3rem black;
+  justify-content: space-evenly;
+}
+
+.input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18rem;                  /* here modifie the block of questions*/
+  height: 4rem;
+  padding-top: 4rem;
+}
+
+.input input {                  /* here modifie each question*/
+    width: 10em;
+    height: 2rem;
+    border-radius: 0.6rem;
+    border:none;
+    outline: none;
+    font-weight: bold ;
+    font-size: 1rem ;
+    text-align: center;
+    box-shadow: 0rem 0rem 0.7rem black;
+}
+
+.input label{
+    font-weight: bold ;  /* The tittle of questions*/
+    font-size: 1.4rem ;
+    text-align: center;
+}
+
+button{
+    width: 9rem;
+    height:3rem;
+    margin-top: 1rem;
+    font-weight: bold ;
+    font-size: 1.3rem ;
+    border-radius: 1.1rem;
+    border: 0.2rem solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+.Result{
+    display: flex;
+    margin-top: 0.3rem;
+    align-items: center;
+    width: 18rem;
+    height: 4rem;
+    border-radius: 3rem;
+    font-size: 1.3rem ;
+    background: white;
+    color:black;
+    user-select: none;
+    box-shadow: 0rem 0rem 0.7rem black;
+}
+
