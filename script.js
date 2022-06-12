@@ -1,53 +1,44 @@
-const Calculate = document.getelementById('Calculate');
+const calculate = document.getelementById('calculate');
 
 function BIM () {
-    const Name = document.getelementById('Name').value;  // get element of id and his atributte value
-    const Height = document.getelementById('Height').value; 
-    const Weight = document.getelementById('Weight').value;
-    const Result = document.getelementById('Result');
+    const name = document.getelementById('Name').value;  // get element of id and his atributte value
+    const height = document.getelementById('Height').value; 
+    const weight = document.getelementById('Weight').value;
+    const result = document.getelementById('Result');
 
-    if(Name !== '' && Height !== '' && Weight !== '') {
+    if(name !== '' && height !== '' && weight !== '') {
     
-        const valueBIM = (Weight / (Height * Height)).toFixed(1);
+        const valueBIM = (weight / (height * height)).toFixed(1);
 
-        let classification = '' ;
+        let classification = '';
       
-        if (valueBIM < 18,5) {
-            classification = 'underweight.' ;
+        if (valueBIM < 18,5){
+            classification = 'underweight.';
         } 
-           else if(valueBIM < 25) {
-            classification = 'ideal weight.' ;
+           else if(valueBIM < 25){
+            classification = 'ideal weight.';
            }
-           else if(valueBIM < 30) {
-            classification = 'mildly overweight.' ;
+           else if(valueBIM < 30){
+            classification = 'mildly overweight.';
            }
-           else if(valueBIM < 35) {
-            classification = 'with degree of obesity I.' ;
+           else if(valueBIM < 35){
+            classification = 'with degree of obesity I.';
            }
-           else if(valueBIM < 40) {
-            classification = 'with degree of obesity II' ;
+           else if(valueBIM < 40){
+            classification = 'with degree of obesity II';
            }
            else{
-            classification = 'with degree of obesity III,care of you health.' ;
+            classification = 'with degree of obesity III,care of you health.';
            }
-            Result.textContent = `${Name} your BIM is ${valueBIM} and you are ${classification}`;
+            result.textContent = `${name} your BIM is ${valueBIM} and you are ${classification}`;
         }
      else{
-         Result.textContent = 'Attention, fill in all the fields!' ;
+         result.textContent = 'Attention, fill in all the fields!';
         }
  
     }
  
-Calculate.addEventListener('click',BIM); // I saying that calculate listen when someone click and do a function BIM
-
-//var h = window.prompt('Type your height:')
-//var peso = window.prompt('Type your weight:')
-//var IMC = peso/(h**2)
-//window.alert('IMC é:' + IMC)
-//var h = window.prompt('Type your height:')
-//var peso = window.prompt('Type your weight:')
-//var IMC = peso/(h**2)
-//window.alert('IMC é: ' + IMC)
+calculate.addEventListener('click', BIM); // I saying that calculate listen when someone click and do a function BIM
 
 
 
