@@ -1,10 +1,10 @@
 const calculate = document.getelementById('calculate');
 
 function BIM () {
-    const name = document.getelementById('Name').value;  // get element of id and his atributte value
-    const height = document.getelementById('Height').value; 
-    const weight = document.getelementById('Weight').value;
-    const result = document.getelementById('Result');
+    const name = document.getelementById('name').value;  // get element of id and his atributte value
+    const height = document.getelementById('height').value; 
+    const weight = document.getelementById('weight').value;
+    const result = document.getelementById('result');
 
     if(name !== '' && height !== '' && weight !== '') {
     
