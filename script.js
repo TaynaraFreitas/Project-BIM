@@ -1,10 +1,11 @@
-const calculate = document.getelementById('calculate');
+const calculate = document.getElementById('calculate');
 
 function BIM () {
-    const name = document.getelementById('name').value;  // get element of id and his atributte value
-    const height = document.getelementById('height').value; 
-    const weight = document.getelementById('weight').value;
-    const result = document.getelementById('result');
+    const name = document.getElementById('name').value;  // get element of id and his atributte value
+    const height = document.getElementById('height').value; 
+    const weight = document.getElementById('weight').value;
+    const result = document.getElementById('result');
+    debugger
 
     if(name !== '' && height !== '' && weight !== '') {
     
@@ -12,7 +13,7 @@ function BIM () {
 
         let classification = '';
       
-        if (valueBIM < 18,5){
+        if (valueBIM < 18.5){
             classification = 'underweight.';
         } 
            else if(valueBIM < 25){
